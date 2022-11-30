@@ -1,38 +1,77 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: aquamarine;
+}
 .App {
-  text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+    margin-top: 20px;
+    color: blue;
+    font-size: 40px;
+    font-weight: 600;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    justify-items: center; 
+    gap: 30px;
+    margin-top: 5%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.grouptab {
+    background-color: white;
+    width: 400px;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.title {
+    color: rgb(23, 145, 39);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title button {
+    height: 24px;
+}
+.groupinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.teams {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.teamlist {
+    display: flex;
+    justify-content: space-between;
+}
+.flagandteam {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.teamlist img {
+    background-color: aqua;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+.points {
+    font-size: 18px;
+    font-weight: 200;
 }
